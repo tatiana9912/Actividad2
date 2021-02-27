@@ -1,0 +1,52 @@
+<app-menu-login></app-menu-login>
+
+<div>
+    <div class="card-header, bg-light text-center text-lg-start">LOGIN</div>
+    <div class="card-body">
+
+        <div class="container pt-5">
+            <div calss="card pt-4 px-4, card text-center">
+
+
+
+                <div class="card text-center">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+
+                        <div class="container pt-5">
+                            <div calss="card pt-4 px-4">
+
+                                <div class="card, card text-center">
+                                    <img src="../../../assets/icons/user.png" class="rounded mx-auto d-block" style="width: 10%;">
+                                </div>
+
+                                <!--style="width: 20%; margin-top: 40%; margin-left: 20%;"-->
+                                <form ngNativeValidate (ngSubmit)="registrar()">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input name="email" [(ngModel)]="userInfo.email" [ngModelOptions]={standalone:true} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input name="password" [(ngModel)]="userInfo.password" [ngModelOptions]={standalone:true} type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card-footer text-muted"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<app-footer></app-footer>
